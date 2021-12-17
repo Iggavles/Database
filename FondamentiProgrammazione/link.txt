@@ -3,3 +3,5 @@ https://www.onlinegdb.com/online_c_compiler
 https://it.living-in-belgium.com/difference-between-malloc-and-calloc-412
 https://www.youtube.com/watch?v=KJgsSFOSQv0
 https://www.programiz.com/c-programming
+https://sourceforge.net/projects/mingw/
+https://git-scm.com/downloads
