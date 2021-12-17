@@ -1,0 +1,12 @@
+scaricate ubunto dal microsoft store poi:
+sudo apt update
+sudo apt install gcc
+sudo apt-get install make         /in alternativa/      sudo apt-get install build-essential
+sudo apt install git
+
+which gcc      //verifica versione gcc
+git --version  //verifica verisone git
+
+altri comandi:
+
+env

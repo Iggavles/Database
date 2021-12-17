@@ -1,0 +1,10 @@
+git clone "URL" ->scarica la cartella di un progetto e tutti i file in esso contenuti
+git add . ->  memorizza le modifiche
+git commit -m "motivo" -> registra localmente le modifiche non pubblicate con il motivo segnalato
+git push -> pubblica nel modifiche nella repository ufficiale
+git config --global user.email "you@example.com" ->registra la mail dell'account github
+  git config --global user.name "Your Name" ->registra l'username dell'account github
+ls -> stampa il contenuto della cartella
+ls -la -> stampa il contenuto della cartella con il dettaglio dei singoli elementi e la somma degli stessi
+cd -> naviga tra le cartelle(".." indica di fare un passo indietro nel percorso
+rmdir "NomeCartella" -> elimina la cartella VUOTA specificata
