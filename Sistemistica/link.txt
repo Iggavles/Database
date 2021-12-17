@@ -1,0 +1,10 @@
+https://it.wikipedia.org/wiki/Base64
+https://it.wikipedia.org/wiki/Unicode
+https://it.wikipedia.org/wiki/UTF-8
+https://it.wikipedia.org/wiki/UTF-16
+https://it.wikipedia.org/wiki/Codice_sorgente
+https://it.wikipedia.org/wiki/Storia_di_Internet
+https://www.ionos.it/digitalguide/server/know-how/cose-un-indirizzo-di-ip/
+https://www.tuttoreti.it/index.php/corsi/100-nozioni-sulle-reti-indirizzi-ip-e-classi-di-indirizzi-ip.html
+https://www.apachefriends.org/it/download.html
+https://it.wikipedia.org/wiki/Tipi_di_record_DNS
