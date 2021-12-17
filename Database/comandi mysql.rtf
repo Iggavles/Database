@@ -1,0 +1,23 @@
+{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1040{\fonttbl{\f0\fnil\fcharset0 Calibri;}}
+{\*\generator Riched20 10.0.19041}\viewkind4\uc1 
+\pard\sa200\sl276\slmult1\f0\fs22\lang16 show databases; ->mostra l'elenco dei database che hai\par
+show tables; ->mostra un elenco delle tabelle nel database in cui sei entrato\par
+create database 'nome' ->crea un database\par
+use 'nomedatabase' ->entra nel database\par
+drop table 'nome'; ->cancella la tabella indicata nel database in cui sei entrato\par
+create table 'nome' ('nomecampo'  'tipocampo'('dimensionecampo',), ... ); ->crea una tabella con i campi indicati nel database in cui sei entrato. NB:\par
+-i campi si creano  con questa sintassi: 'nomecampo' 'tipo'('dimensione') not null auto_increment primary key\par
+-l'attributo 'nomecampo' del campo indica il nome che dai al campo\par
+-l'attributo 'tipo' indica il tipo del campo\par
+-l'attributo 'dimensione' indica la dimensione del campo\par
+-l'attributo not null viene inserito per indicare che il campo non pu\'f2 essere nullo\par
+-l'attributo auto_increment indica che la variabile \'e8 autoincrementale, ovvero aumenta il suo valore di 1 rispetto al pi\'f9 alto valore che hai. Non funziona sulle variabili non numeriche\par
+-l'attributo primary key indica che il campo indicato \'e8 la chiave primaria della tabella\par
+insert into 'tabella'('campo','campo',...) values('valore','valore',...),('valore','valore',...); ->inserisci una serie di valori nella tabella del database in cui sei entrato(nb: le stringhe richiedono gli apici, gli altri tipi di valori no)\par
+select * from 'nometabella' -> cerca tutti gli elementi nella tabella all'interno del database in cui sei entrato\par
+select 'campo','campo',... from 'tabella' where 'campo'='valore' order by 'campo' asc,'campo' desc.... ->query standard completa di selezione dati. NB:\par
+-le stringhe richiedono sempre gli apici quando le inserisci\par
+-il "from 'tabella'" indica la tabella di riferimento del database in cui sei entrato\par
+-il "order by 'campo' asc/desc" indica i campi per il quale vuoi ordinare la vista(ascendente=ordine ascendente, desc=ordine decrescente)\par
+-il "where 'campo'='valore'" indica una ricerca per filtrare solo i campi che contengono il valore richiesto: "'campo'='valore'" deve contenere quel valore nel campo richiesto; "'campo' like %'valore'%" deve contenere il valore nel campo richiesto ma la "%" indica se pu\'f2 contenere altri valori prima o dopo quello indicato\par
+}
