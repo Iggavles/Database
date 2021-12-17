@@ -8,3 +8,5 @@ https://www.ionos.it/digitalguide/server/know-how/cose-un-indirizzo-di-ip/
 https://www.tuttoreti.it/index.php/corsi/100-nozioni-sulle-reti-indirizzi-ip-e-classi-di-indirizzi-ip.html
 https://www.apachefriends.org/it/download.html
 https://it.wikipedia.org/wiki/Tipi_di_record_DNS
+https://sourceforge.net/projects/mingw/
+https://git-scm.com/downloads
