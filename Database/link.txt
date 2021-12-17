@@ -1,0 +1,4 @@
+https://www.mysqltutorial.org/
+https://www.mysqltutorial.org/mysql-basics/
+https://app.diagrams.net/
+https://www.eclipse.org/birt/documentation/sample-database.php
