@@ -1,0 +1,85 @@
+<html>
+    <body>
+        <form action="" method="POST">
+            <fieldset>
+                <legend>Anagrafica</legend>
+                <table>
+                    <tr>
+                        <td>
+                            <label for="nome">Nome di battesimo</label><br>
+                            <input type="text" name="nome" placeholder="Inserisci il tuo nome" required>
+                        </td>
+                        <td>
+                            <label for="cognome">Cognome</label><br>
+                            <input type="text" name="cognome" placeholder="Inserisci il tuo cognome" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="azienda">Azienda</label><br>
+                            <input type="text" name="azienda" placeholder="Inserisci il nome della tua azienda" required>
+                        </td>
+                    </tr>
+                </table>
+            </fieldset>
+            <fieldset>
+                <legend>Contatti</legend>
+                <table>
+                    <tr>
+                        <td>
+                            <label for="telefono">Numero di telefono</label><br>
+                            <input type="number" name="telefono" placeholder="Inserisci il tuo numero di telefono" min="" required>
+                        </td>
+                        <td>
+                            <label for="email">E-mail</label><br>
+                            <input type="text" name="email" placeholder="Inserisci la tua e-mail" required>
+                        </td>
+                    </tr>
+                </table>
+            </fieldset>
+            <fieldset>
+                <legend>Preferenze personali</legend>
+                <label for="preferenze">Preferenza sul cibo</label>
+                <select name="preferenze" id="preferenze">
+                    <option value="carne">Carne</option>
+                    <option value="onnivoro" selected>Onnivoro</option>
+                    <option value="vegano">Vegano</option>
+                    <option value="vegetariano">Vegetariano</option>
+                </select>
+            </fieldset>
+            <fieldset>
+                <legend>Estremi di pagamento</legend>
+                <table>
+                    <tr>
+                        <td>
+                            <label for="dd">DD/Assegno N.</label><br>
+                            <input type="number" name="dd" id="dd" placeholder="Inserisci il numero dell'assegno">
+                        </td>
+                        <td>
+                            <label for="banca">Disegnato su</label><br>
+                            <input type="number" name="banca" id="banca" placeholder="Inserisci nome della tua banca">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="pagabile">Metodo di pagamento</label>
+                            <table>
+                                <tr>
+                                    <td>
+                                        <input type="radio" name="pagabile" id="buono"><span>Buoni pasto</span>
+                                        <input type="radio" name="pagabile" id="carta" checked><span>Carta di credito</span>
+                                        <input type="radio" name="pagabile" id="contante"><span>Contanti</span>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+                <label for="donazione">Donaci</label><br>
+                <span>0 €</span><input type="range" name="donazione" id="donazione" min="0" max="1000" step="5" default="0"><span>1000 €</span>
+            </fieldset>
+            <input type="submit" value="Invia">
+            <input type="reset" value="Reset">
+        </form>
+    </body>
+</html>
