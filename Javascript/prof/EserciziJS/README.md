@@ -1,2 +1,0 @@
-# EserciziJS
-Materiale vario formazione
