@@ -64,6 +64,7 @@ WHERE  <condizioni>
 GROUP BY <nomi campi>
 HAVING <condizioni su conteggi group by >
 ORDER BY <campi ordinamento>
+LIMIT 100 OFFSET 300
 
 
 
@@ -87,7 +88,7 @@ IS NOT NULL
 IN  es: IN(2, 3)    oppure IN('Matteo', 'Andrea')
 NOT IN (2, 3)       oppure NOT IN('Matteo', 'Andrea')
 prezzo >= 50 AND prezzo <= 100
-
+LIKE
 
 
 
@@ -198,3 +199,97 @@ CLIENTE A ---- > 55.000€
 CLIENTE B ---- > 38.000€
 
 having sum(importo_ordine) > 50.000
+
+
+UPDATE clienti
+SET stato = 'CLOSE', provincia = 'PU'
+WHERE id = 3;
+
+DELETE FROM clienti
+WHERE nazione = 'ITALIA' AND ....;
+
+
+SELECT count(*) FROM clienti
+WHERE id = 3;
+
+
+SELECT * 
+FROM clienti 
+WHERE ragione_sociale LIKE '%Aro%sti%';
+
+SELECT *
+FROM clienti
+WHERE ragione_sociale LIKE 'A_osti%';
+                            Arrosti
+                            Agostini
+
+                     LIKE '%Arosti%'
+
+
+SELECT *
+FROM clienti WHERE provincia IN ('PU', 'AN');
+
+
+Tab ordini: cliente_id
+Cliente: di una provincia
+
+SELECT *
+from ordini JOIN clienti ON .....
+WHERE clienti.provincia IN ('PU', 'AN');
+
+// SUBQUERY, o SOTTOQUERY
+SELECT *
+FROM ordini
+WHERE cliente_id IN (
+    SELECT id FROM clienti 
+    WHERE provincia IN ('PU', 'AN')
+);
+
+SELECT *
+FROM ordini
+WHERE cliente_id IN (1, 45, 66, 89);
+
+SELECT d.nome AS nome_docente, m.nome, pippo.nome
+FROM docenti d
+JOIN materie m ON ....
+JOIN (
+    SELECT * FROM .....
+) pippo ON d.docente_id = pippo.docente_id
+ORDER BY m.nome
+
+
+INSERT INTO clienti(nome, cognome) VALUES('Matteo', 'Arosti'), ('Pinco', 'Pallino');
+
+INSERT INTO clienti(nome, cognome, codice_fiscale) VALUES (
+    SELECT nome, cognome, fff FROM clienti_di_appoggio
+);
+
+
+SHOW INDEXES FROM docenti;
+ALTER TABLE `docenti`
+	ADD UNIQUE INDEX `idx_cognone_nome` (`cognome`, 'nome');
+
+ALTER TABLE docenti ADD INDEX idx_cognome (cognome);    
+
+ALTER TABLE docenti
+	ADD INDEX cognome_nome (cognome, nome);
+
+
+CREATE VIEW materie_docenti AS (
+    select materie.nome AS materie_nome, docenti.nome AS docenti_nome 
+    from materie JOIN docenti on materie.docente_id = docenti.id
+    WHERE 1=1
+) ;
+
+
+
+INSERT INTO materie(nome, ore, docente_id, docente_fascia) VALUES
+    ('Magento', 160, 3, 'A');
+
+
+
+START TRANSACTION;  // -> Attiva una transazione
+...
+...
+COMMIT;     // -> Conferma tutte le operazione
+ROLLBACK;   // -> Annulla tutte le operazioni e ripristina allo precedente
