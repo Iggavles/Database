@@ -1,0 +1,17 @@
+#carouselExampleIndicators, .carousel-inner, .carousel-item{
+    height: 350px;
+}
+.carousel-item img{
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 15%;
+}
+.breadcrumb{
+    margin-top: 1em;
+}
+.breadcrumb-item a {
+    color: #6c757d;
+}
+#riferimenti{
+    min-height: 2em;
+}
