@@ -1,0 +1,21 @@
+nav>a:hover
+{
+    background-color: darkred;
+}
+section>form>input[type="checkbox"]+label
+{
+    color: darkviolet;
+    font-size: 1.5em;
+}
+section>form>input[type="email"]+label
+{
+    color: darkblue;
+    font-size: 1em;
+}
+@media screen and (max-width: 992px)
+{
+    nav>a
+    {
+        display: list-item;
+    }    
+}

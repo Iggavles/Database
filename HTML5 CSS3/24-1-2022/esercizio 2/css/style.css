@@ -1,0 +1,39 @@
+h1
+{
+    width: 100%;
+}
+article
+{
+    border: 1px solid black;
+    margin-left: 1%;
+    padding: 10px;
+}
+
+@media screen and (max-width: 575px)
+{
+    article
+    {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 992px)
+{
+    article
+    {
+        width: 40%;
+    }
+}
+@media screen and (min-width: 1200px)
+{
+    article
+    {
+        width: 30%;
+    }
+}
+@media screen and (min-width: 1200px)
+{
+    article
+    {
+        width: 20%;
+    }
+}
